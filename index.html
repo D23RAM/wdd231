@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dija Ramsoedit | WDD 231</title>
+
+    <meta name="description"
+        content="WDD 231 home page for Dija Ramsoedit.">
+    <meta name="author" content="Dija Ramsoedit">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+
+            <div class="identity">
+                <img src="images/logo.png" alt="Site logo">
+
+                <span>Dija Ramsoedit</span>
+            </div>
+
+            <button id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-nav">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- NAVIGATION -->
+    <nav id="primary-nav">
+
+        <a href="index.html" class="active">
+            Home
+        </a>
+
+        <a href="#">
+            Chamber Project
+        </a>
+
+        <a href="#">
+            Final Project
+        </a>
+
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <h1>Home</h1>
+
+
+        <!-- ABOUT ME + STUDENT PHOTO -->
+        <div class="top-sections">
+
+            <section class="about">
+
+                <h2>About Me</h2>
+
+                <div class="section-body">
+
+                    <p>
+                        Hello! My name is Dija Ramsoedit. I am from Suriname
+                        and I am currently pursuing my degree in software development at BYU
+                    </p>
+
+                    <p>
+                        I enjoy learning about technology, programming, data, finance,
+                        and robotics.
+                    </p>
+
+                    <p>
+                        I am excited to continue developing my skills in
+                        web development and programming through WDD 231.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <section class="photo">
+
+                <h2>Student Photo</h2>
+
+                <div class="photo-body">
+
+                    <img src="images/profile.jpeg"
+                        alt="Student photo of Dija Ramsoedit"
+                        width="400"
+                        height="400">
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- WEB CERTIFICATE COURSES -->
+        <section class="courses">
+
+            <h2>Web Certificate Courses</h2>
+
+
+            <!-- COURSE FILTER BUTTONS -->
+            <div class="course-filters">
+
+                <button id="all" class="selected">
+                    All
+                </button>
+
+                <button id="cse">
+                    CSE
+                </button>
+
+                <button id="wdd">
+                    WDD
+                </button>
+
+            </div>
+
+
+            <!-- COURSES ARE INSERTED HERE BY JAVASCRIPT -->
+            <div id="course-cards"></div>
+
+
+            <!-- TOTAL CREDITS -->
+            <p class="total">
+                The total credits for the courses listed above is
+                <span id="total-credits">0</span>
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <!-- SOCIAL LINKS -->
+        <div class="social-links">
+
+            <a href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                in
+            </a>
+
+            <a href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub">
+                GitHub
+            </a>
+
+            <a href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X">
+                X
+            </a>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            • Dija Ramsoedit • Suriname
+        </p>
+
+
+        <!-- LAST MODIFIED -->
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
