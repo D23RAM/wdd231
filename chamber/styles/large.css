@@ -1,0 +1,145 @@
+
+@media screen and (min-width: 700px) {
+
+
+    
+    .header-content {
+        padding: 0.8rem 1rem;
+    }
+
+    .brand img {
+        width: 65px;
+
+        height: 65px;
+    }
+
+    .site-name {
+        font-size: 1.2rem;
+    }
+
+    .tagline {
+        font-size: 0.7rem;
+    }
+
+
+  
+    #menu-button {
+        display: none;
+    }
+
+    #dark-mode-button {
+        width: 42px;
+
+        height: 42px;
+    }
+
+
+    
+    nav {
+        display: flex;
+
+        justify-content: flex-end;
+
+        width: 100%;
+
+        max-width: 1200px;
+
+        margin: 0 auto;
+
+        background-color: var(--dark-green);
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav a {
+        width: auto;
+
+        padding: 0.75rem 1.2rem;
+
+        border-bottom: none;
+    }
+
+
+   
+    main {
+        padding: 1.5rem 1rem;
+    }
+
+    .page-heading h1 {
+        font-size: 2.2rem;
+    }
+
+    .page-heading p {
+        font-size: 0.9rem;
+    }
+
+
+  
+    .member-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 1.25rem;
+    }
+
+
+  
+    .member-content {
+        min-height: 145px;
+    }
+
+    .member-content img {
+        width: 100px;
+
+        height: 100px;
+    }
+
+    .member-info p {
+        font-size: 0.7rem;
+    }
+
+
+  
+    .member-list .member-info {
+        display: grid;
+
+        grid-template-columns:
+            1fr
+            1fr
+            1fr
+            1fr
+            auto;
+
+        align-items: center;
+
+        gap: 0.5rem 1rem;
+    }
+
+    .member-list .member-content {
+        align-items: center;
+    }
+
+
+ 
+    .footer-content {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+        align-items: center;
+
+        text-align: left;
+
+        padding: 1.5rem 1rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-development {
+        text-align: left;
+    }
+
+}

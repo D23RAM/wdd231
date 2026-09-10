@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+
+    <rect
+        x="5"
+        y="5"
+        width="90"
+        height="90"
+        rx="18"
+        fill="#F7F4EC"
+        stroke="#f5db33"
+        stroke-width="5"/>
+
+    <path
+        d="M20 70 L35 48 L47 58 L64 35 L82 70 Z"
+        fill="#17284a"/>
+
+    <circle
+        cx="70"
+        cy="27"
+        r="6"
+        fill="#52b838"/>
+
+</svg>

@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Fernandes Group",
+        "address": "Verlengde Gemenelandsweg 103-105, Paramaribo, Suriname",
+        "phone": "+597 411998",
+        "website": "https://fernandes.sr/",
+        "image": "fernandeslogo.jpg",
+        "membership": 3,
+        "tagline": "A leading Surinamese business group.",
+        "category": "Conglomerate"
+    },
+    {
+        "name": "De Surinaamsche Bank",
+        "address": "Henck Arronstraat 26-30, Paramaribo, Suriname",
+        "phone": "+597 471100",
+        "website": "https://www.dsb.sr/",
+        "image": "dsblogo.jpeg",
+        "membership": 3,
+        "tagline": "Banking and financial services in Suriname.",
+        "category": "Banking"
+    },
+    {
+        "name": "Hakrinbank N.V.",
+        "address": "Dr. Sophie Redmondstraat 11-13, Paramaribo, Suriname",
+        "phone": "+597 477722",
+        "website": "https://www.hakrinbank.com/",
+        "image": "hakringbanklogo.png",
+        "membership": 3,
+        "tagline": "Banking and financial services.",
+        "category": "Banking"
+    },
+    {
+        "name": "Assuria N.V.",
+        "address": "Recolaan 17, Paramaribo, Suriname",
+        "phone": "+597 473400",
+        "website": "https://www.assuria.sr/",
+        "image": "assurialogo.png",
+        "membership": 3,
+        "tagline": "Insurance and financial services.",
+        "category": "Insurance"
+    },
+    {
+        "name": "Staatsolie",
+        "address": "Dr. Ir. H.S. Adhinstraat 21, Paramaribo, Suriname",
+        "phone": "+597 499649",
+        "website": "https://www.staatsolie.com/",
+        "image": "staatsolielogo.jpeg",
+        "membership": 3,
+        "tagline": "Suriname's national energy company.",
+        "category": "Energy"
+    },
+    {
+        "name": "Telesur",
+        "address": "Heiligenweg 14, Paramaribo, Suriname",
+        "phone": "+597 473944 / 474242",
+        "website": "https://www.telesur.sr/",
+        "image": "telesurlogo.png",
+        "membership": 3,
+        "tagline": "Keeping Suriname connected.",
+        "category": "Telecommunications"
+    },
+    {
+        "name": "VSH United",
+        "address": "Van 't Hogerhuysstraat 9-11, Paramaribo, Suriname",
+        "phone": "+597 402558",
+        "website": "https://vshunited.com/",
+        "image": "vshlogo.jpeg",
+        "membership": 3,
+        "tagline": "A diversified Surinamese business group.",
+        "category": "Investment & Services"
+    }
+]

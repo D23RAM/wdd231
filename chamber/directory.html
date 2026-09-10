@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Directory | Paramaribo Kamer Koophandel</title>
+
+    <meta name="description"
+        content="Explore businesses and organizations that are part of the Paramaribo Business Hub in Paramaribo, Suriname.">
+
+    <meta name="author" content="Dija Ramsoedit">
+
+    <!-- Facebook / Open Graph Meta Data -->
+    <meta property="og:title"
+        content="Paramaribo Business Hub | Business Directory">
+
+    <meta property="og:description"
+        content="Explore businesses and organizations in Paramaribo, Suriname. Connecting businesses. Growing Paramaribo.">
+
+    <meta property="og:image"
+        content="images/logo.png">
+
+    <meta property="og:url"
+        content="https://example.com/chamber/directory.html">
+
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="images/favicon.svg"
+        type="image/svg+xml">
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+
+    <script src="scripts/directory.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="header-content">
+
+            <a href="directory.html" class="brand">
+
+                <img
+                    src="images/logo.svg"
+                    alt="Paramaribo Business Hub logo">
+
+                <div class="brand-text">
+
+                    <span class="site-name">
+                        Paramaribo Kamer Koophandel
+                    </span>
+
+                    <span class="tagline">
+                        Connecting businesses. Growing Paramaribo.
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <div class="header-buttons">
+
+                <button
+                    id="dark-mode-button"
+                    aria-label="Toggle dark mode">
+                    ◐
+                </button>
+
+
+                <button
+                    id="menu-button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="primary-nav">
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- NAVIGATION -->
+    <nav id="primary-nav">
+
+        <a href="../index.html">
+            Home
+        </a>
+
+        <a href="#">
+            Discover
+        </a>
+
+        <a href="directory.html" class="active">
+            Directory
+        </a>
+
+        <a href="#">
+            Join
+        </a>
+
+    </nav>
+
+
+    <!-- MAIN -->
+    <main>
+
+        <div class="page-heading">
+
+            <h1>Directory</h1>
+
+            <p>
+                Discover businesses and organizations
+                contributing to the growth of Paramaribo.
+            </p>
+
+        </div>
+
+
+        <!-- VIEW BUTTONS -->
+        <div class="view-buttons">
+
+            <button
+                id="grid-button"
+                class="view-selected"
+                aria-label="Display businesses as a grid">
+
+                ▦ Grid
+
+            </button>
+
+
+            <button
+                id="list-button"
+                aria-label="Display businesses as a list">
+
+                ☰ List
+
+            </button>
+
+        </div>
+
+
+        <!-- BUSINESS DIRECTORY -->
+        <section class="directory-section">
+
+            <h2 class="visually-hidden">
+                Business Directory Members
+            </h2>
+
+            <div
+                id="member-container"
+                class="member-grid">
+
+                <!-- Members are loaded using JavaScript -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+
+            <!-- CONTACT INFORMATION -->
+            <div class="footer-contact">
+
+                <h2>
+                    Paramaribo Kamer Koophandel
+                </h2>
+
+                <p>
+                    Paramaribo, Suriname
+                </p>
+
+                <p>
+                    info@paramaribokamerkoophandel.com
+                </p>
+
+                <p>
+                    +597 400-000
+                </p>
+
+            </div>
+
+
+            <!-- SOCIAL MEDIA -->
+            <div class="social-links">
+
+                <a
+                    href="#"
+                    aria-label="YouTube">
+                    ▶
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="X">
+                    𝕏
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="LinkedIn">
+                    in
+                </a>
+
+            </div>
+
+
+            <!-- DEVELOPMENT INFORMATION -->
+            <div class="footer-development">
+
+                <p>
+                    WDD 231 Class Project 
+                </p>
+
+                <p>
+                    Dija Ramsoedit
+                </p>
+
+                <p>
+                    &copy;
+                    <span id="currentyear"></span>
+                    Paramaribo Kamer Koophandel
+                </p>
+
+                <p id="lastModified"></p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
