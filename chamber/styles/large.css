@@ -171,3 +171,66 @@
     }
 
 }
+
+/* ================================
+   HOME PAGE - LARGE SCREENS
+================================ */
+
+@media screen and (min-width: 700px) {
+
+    .home-hero {
+        min-height: 520px;
+    }
+
+    .hero-image {
+        min-height: 520px;
+    }
+
+    .hero-content {
+        padding-left: 8%;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+
+    /* Events */
+
+    .events-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .event-card {
+        grid-template-columns: 1fr;
+    }
+
+    .event-date {
+        width: 75px;
+    }
+
+
+    /* Weather */
+
+    .weather-layout {
+        grid-template-columns: 1fr 2fr;
+        align-items: stretch;
+    }
+
+    .current-weather {
+        display: flex;
+        align-items: center;
+    }
+
+    .weather-main {
+        width: 100%;
+    }
+
+
+    /* Spotlights */
+
+    .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
