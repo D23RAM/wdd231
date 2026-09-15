@@ -1,130 +1,165 @@
+
+console.log("🔥 HOME.JS IS RUNNING 🔥");
+
+
 const currentYear = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
+
 const currentTemperature = document.querySelector("#current-temperature");
 const currentDescription = document.querySelector("#current-description");
+
 const forecastContainer = document.querySelector("#forecast-container");
 const spotlightContainer = document.querySelector("#spotlight-container");
 
 currentYear.textContent = new Date().getFullYear();
 lastModified.textContent = `Last Modification: ${document.lastModified}`;
 
-const API_KEY = "1376c7127c25559c1dd369fc6ef877ce";
+const API_KEY = "efe7934edb035eba7f465905d385cdda";
+
 const LATITUDE = 5.8520;
 const LONGITUDE = -55.2038;
 
-async function getCurrentWeather() {
-    const url =
+
+// WEATHER
+async function getWeather() {
+
+    const currentURL =
         `https://api.openweathermap.org/data/2.5/weather?lat=${LATITUDE}&lon=${LONGITUDE}&units=metric&appid=${API_KEY}`;
 
-    try {
-        const response = await fetch(url);
-
-        if (!response.ok) {
-            throw new Error(`Weather error: ${response.status}`);
-        }
-
-        const data = await response.json();
-
-        currentTemperature.textContent = `${Math.round(data.main.temp)}°C`;
-        currentDescription.textContent =
-            capitalize(data.weather[0].description);
-
-    } catch (error) {
-        console.error("Current weather error:", error);
-        currentTemperature.textContent = "--°C";
-        currentDescription.textContent = "Weather unavailable";
-    }
-}
-
-async function getForecast() {
-    const url =
+    const forecastURL =
         `https://api.openweathermap.org/data/2.5/forecast?lat=${LATITUDE}&lon=${LONGITUDE}&units=metric&appid=${API_KEY}`;
 
     try {
-        const response = await fetch(url);
 
-        if (!response.ok) {
-            throw new Error(`Forecast error: ${response.status}`);
+        // Current weather
+        const currentResponse = await fetch(currentURL);
+
+        if (!currentResponse.ok) {
+            throw new Error(`Current weather error: ${currentResponse.status}`);
         }
 
-        const data = await response.json();
+        const currentData = await currentResponse.json();
+
+        currentTemperature.textContent =
+            `${Math.round(currentData.main.temp)}°C`;
+
+        currentDescription.textContent =
+            capitalize(currentData.weather[0].description);
+
+
+        // Forecast
+        const forecastResponse = await fetch(forecastURL);
+
+        if (!forecastResponse.ok) {
+            throw new Error(`Forecast error: ${forecastResponse.status}`);
+        }
+
+        const forecastData = await forecastResponse.json();
 
         forecastContainer.innerHTML = "";
 
-        const days = {};
+        const days = [];
 
-        data.list.forEach(item => {
+        forecastData.list.forEach(item => {
+
             const date = new Date(item.dt * 1000);
 
-            const day = date.toLocaleDateString("en-US", {
-                weekday: "short",
-                month: "short",
-                day: "numeric"
-            });
+            const dateString = date.toLocaleDateString("en-US");
 
-            if (!days[day]) {
-                days[day] = item;
+            if (!days.some(day => day.date === dateString)) {
+
+                days.push({
+                    date: dateString,
+                    item: item
+                });
+
             }
+
         });
 
-        const forecastDays = Object.values(days).slice(1, 4);
+        // Skip today and show the next 3 days
+        const nextThreeDays = days.slice(1, 4);
 
-        forecastDays.forEach(item => {
-            const date = new Date(item.dt * 1000);
+        nextThreeDays.forEach(day => {
+
+            const date = new Date(day.item.dt * 1000);
 
             const dayName = date.toLocaleDateString("en-US", {
                 weekday: "short"
             });
 
             const card = document.createElement("article");
+
             card.classList.add("forecast-card");
 
             card.innerHTML = `
                 <h4>${dayName}</h4>
+
                 <p class="forecast-temperature">
-                    ${Math.round(item.main.temp)}°C
+                    ${Math.round(day.item.main.temp)}°C
                 </p>
-                <p>${capitalize(item.weather[0].description)}</p>
+
+                <p>
+                    ${capitalize(day.item.weather[0].description)}
+                </p>
             `;
 
             forecastContainer.appendChild(card);
+
         });
 
     } catch (error) {
-        console.error("Forecast error:", error);
+
+        console.error("WEATHER ERROR:", error);
+
+        currentTemperature.textContent = "--°C";
+        currentDescription.textContent = "Weather unavailable";
+
         forecastContainer.innerHTML =
-            `<p>Forecast unavailable.</p>`;
+            "<p>Forecast unavailable.</p>";
     }
 }
 
+
+// BUSINESS SPOTLIGHTS
 async function getSpotlights() {
+
     try {
+
+        console.log("Loading members.json...");
+
         const response = await fetch("data/members.json");
 
         if (!response.ok) {
-            throw new Error(`Members JSON error: ${response.status}`);
+            throw new Error(`Members error: ${response.status}`);
         }
 
         const members = await response.json();
+
+        console.log("Members loaded:", members);
 
         const eligibleMembers = members.filter(member =>
             Number(member.membership) === 2 ||
             Number(member.membership) === 3
         );
 
-        const shuffled = [...eligibleMembers]
-            .sort(() => Math.random() - 0.5);
+        const shuffledMembers =
+            [...eligibleMembers].sort(() => Math.random() - 0.5);
 
-        const selected = shuffled.slice(0, 3);
+        const selectedMembers =
+            shuffledMembers.slice(0, 3);
 
         spotlightContainer.innerHTML = "";
 
-        selected.forEach(member => {
+        selectedMembers.forEach(member => {
+
             const card = document.createElement("article");
+
             card.classList.add("spotlight-card");
 
             card.innerHTML = `
                 <div class="spotlight-header">
+
                     <span class="membership-badge">
                         ${getMembershipLevel(member.membership)}
                     </span>
@@ -132,6 +167,7 @@ async function getSpotlights() {
                     <h3>${member.name}</h3>
 
                     <p>${member.tagline}</p>
+
                 </div>
 
                 <img
@@ -141,6 +177,7 @@ async function getSpotlights() {
                 >
 
                 <div class="spotlight-info">
+
                     <p>
                         <strong>Phone:</strong>
                         ${member.phone}
@@ -163,21 +200,26 @@ async function getSpotlights() {
                     >
                         Visit Website
                     </a>
+
                 </div>
             `;
 
             spotlightContainer.appendChild(card);
+
         });
 
     } catch (error) {
-        console.error("Business spotlight error:", error);
+
+        console.error("SPOTLIGHT ERROR:", error);
 
         spotlightContainer.innerHTML =
-            `<p>Business spotlights unavailable.</p>`;
+            "<p>Business spotlights unavailable.</p>";
     }
 }
 
+
 function getMembershipLevel(level) {
+
     if (Number(level) === 3) {
         return "Gold Member";
     }
@@ -189,10 +231,13 @@ function getMembershipLevel(level) {
     return "Member";
 }
 
+
 function capitalize(text) {
+
     return text.charAt(0).toUpperCase() + text.slice(1);
+
 }
 
-getCurrentWeather();
-getForecast();
+
+getWeather();
 getSpotlights();
