@@ -241,3 +241,33 @@ function capitalize(text) {
 
 getWeather();
 getSpotlights();
+
+
+function getMembershipLevel(level) {
+
+    if (Number(level) == 3) {
+        return "Gold Member" ;
+
+    }
+
+    if (Number(level) == 2) {
+        return "silver member";
+    }
+
+    else{
+        return "member";
+    }
+}
+
+
+function capitalize(text){
+    return text.charAt(0).toUpperCase() + text.slice(1); 
+
+}
+
+function getMembershipLevel(level) {
+
+    if (Number(level) == 3) {
+        return "Gold member"
+    }
+}

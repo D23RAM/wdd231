@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You | Paramaribo Business Hub</title>
+
+    <meta name="description"
+        content="Thank you for applying to join the Paramaribo Business Hub.">
+
+    <meta name="author" content="Dija Ramsoedit">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+
+        <a href="index.html" class="brand">
+
+            <img
+                src="images/logo.svg"
+                alt="Paramaribo Business Hub logo"
+            >
+
+            <div class="brand-text">
+                <span class="site-name">
+                    Paramaribo Business Hub
+                </span>
+
+                <span class="tagline">
+                    Connecting businesses. Growing Paramaribo.
+                </span>
+            </div>
+
+        </a>
+
+        <div class="header-buttons">
+
+            <button
+                id="dark-mode-button"
+                aria-label="Toggle dark mode"
+            >
+                ◐
+            </button>
+
+            <button
+                id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-nav"
+            >
+                ☰
+            </button>
+
+        </div>
+    </div>
+</header>
+
+
+<nav id="primary-nav">
+
+    <a href="index.html">
+        Home
+    </a>
+
+    <a href="#">
+        Discover
+    </a>
+
+    <a href="directory.html">
+        Directory
+    </a>
+
+    <a href="join.html">
+        Join
+    </a>
+
+</nav>
+
+
+<main>
+
+    <section class="thank-you-section">
+
+        <p class="section-label">
+            APPLICATION RECEIVED
+        </p>
+
+        <h1>
+            Thank You!
+        </h1>
+
+        <p class="thank-you-message">
+            Thank you for your interest in joining the
+            Paramaribo Business Hub. We received the following
+            information from your application.
+        </p>
+
+
+        <div class="application-summary">
+
+            <h2>
+                Application Information
+            </h2>
+
+            <div class="submitted-information">
+
+                <p>
+                    <strong>First Name:</strong>
+                    <span id="display-first-name"></span>
+                </p>
+
+                <p>
+                    <strong>Last Name:</strong>
+                    <span id="display-last-name"></span>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <span id="display-email"></span>
+                </p>
+
+                <p>
+                    <strong>Mobile Phone:</strong>
+                    <span id="display-phone"></span>
+                </p>
+
+                <p>
+                    <strong>Business / Organization:</strong>
+                    <span id="display-organization"></span>
+                </p>
+
+                <p>
+                    <strong>Application Date & Time:</strong>
+                    <span id="display-timestamp"></span>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <a href="index.html" class="hero-button">
+            Return to Home
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-contact">
+
+            <h2>
+                Paramaribo Business Hub
+            </h2>
+
+            <p>
+                Paramaribo, Suriname
+            </p>
+
+            <p>
+                info@paramaribobusinesshub.com
+            </p>
+
+            <p>
+                +597 400-000
+            </p>
+
+        </div>
+
+
+        <div class="social-links">
+
+            <a href="#" aria-label="YouTube">▶</a>
+            <a href="#" aria-label="X">𝕏</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+
+        </div>
+
+
+        <div class="footer-development">
+
+            <p>
+                WDD 231 Class Project
+            </p>
+
+            <p>
+                Dija Ramsoedit
+            </p>
+
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Paramaribo Business Hub
+            </p>
+
+            <p id="lastModified"></p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+
+    document.querySelector("#display-first-name").textContent =
+        params.get("firstName") || "Not provided";
+
+    document.querySelector("#display-last-name").textContent =
+        params.get("lastName") || "Not provided";
+
+    document.querySelector("#display-email").textContent =
+        params.get("email") || "Not provided";
+
+    document.querySelector("#display-phone").textContent =
+        params.get("phone") || "Not provided";
+
+    document.querySelector("#display-organization").textContent =
+        params.get("organization") || "Not provided";
+
+    const timestampValue = params.get("timestamp");
+
+    if (timestampValue) {
+        const date = new Date(timestampValue);
+
+        document.querySelector("#display-timestamp").textContent =
+            date.toLocaleString();
+    } else {
+        document.querySelector("#display-timestamp").textContent =
+            "Not provided";
+    }
+</script>
+
+</body>
+</html>

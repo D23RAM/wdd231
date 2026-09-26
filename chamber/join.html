@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join | Paramaribo Business Hub</title>
+
+    <meta name="description"
+        content="Apply to join the Paramaribo Business Hub and connect your organization with the local business community.">
+
+    <meta name="author" content="Dija Ramsoedit">
+
+    <meta property="og:title" content="Join | Paramaribo Business Hub">
+    <meta property="og:description"
+        content="Apply to join the Paramaribo Business Hub.">
+    <meta property="og:image"
+        content="https://example.com/chamber/images/logo.svg">
+    <meta property="og:url"
+        content="https://example.com/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+
+        <a href="index.html" class="brand">
+            <img
+                src="images/logo.svg"
+                alt="Paramaribo Business Hub logo"
+            >
+
+            <div class="brand-text">
+                <span class="site-name">
+                    Paramaribo Business Hub
+                </span>
+
+                <span class="tagline">
+                    Connecting businesses. Growing Paramaribo.
+                </span>
+            </div>
+        </a>
+
+        <div class="header-buttons">
+
+            <button
+                id="dark-mode-button"
+                aria-label="Toggle dark mode"
+            >
+                ◐
+            </button>
+
+            <button
+                id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-nav"
+            >
+                ☰
+            </button>
+
+        </div>
+    </div>
+</header>
+
+
+<nav id="primary-nav">
+
+    <a href="index.html">
+        Home
+    </a>
+
+    <a href="#">
+        Discover
+    </a>
+
+    <a href="directory.html">
+        Directory
+    </a>
+
+    <a href="join.html" class="active">
+        Join
+    </a>
+
+</nav>
+
+
+<main>
+
+    <section class="join-intro">
+
+        <p class="section-label">
+            BECOME A MEMBER
+        </p>
+
+        <h1>
+            Join the Paramaribo Business Hub
+        </h1>
+
+        <p>
+            Connect your organization with businesses, entrepreneurs,
+            and opportunities across Paramaribo.
+        </p>
+
+    </section>
+
+
+    <div class="join-layout">
+
+        <!-- APPLICATION FORM -->
+        <section class="join-form-section">
+
+            <h2>
+                Membership Application
+            </h2>
+
+            <form
+                method="get"
+                action="thankyou.html"
+                class="membership-form"
+            >
+
+                <label>
+                    First Name
+                    <input
+                        type="text"
+                        name="firstName"
+                        title="Enter your first name"
+                        autocomplete="given-name"
+                        required
+                    >
+                </label>
+
+
+                <label>
+                    Last Name
+                    <input
+                        type="text"
+                        name="lastName"
+                        title="Enter your last name"
+                        autocomplete="family-name"
+                        required
+                    >
+                </label>
+
+
+                <label>
+                    Organizational Title
+                    <input
+                        type="text"
+                        name="organizationTitle"
+                        title="Enter your organizational title"
+                        autocomplete="organization-title"
+                        pattern="[A-Za-zÀ-ÿ -]{7,}"
+                    >
+                    <small>
+                        At least 7 characters. Letters, spaces, and hyphens only.
+                    </small>
+                </label>
+
+
+                <label>
+                    Email Address
+                    <input
+                        type="email"
+                        name="email"
+                        title="Enter your email address"
+                        autocomplete="email"
+                        placeholder="example@email.com"
+                        required
+                    >
+                </label>
+
+
+                <label>
+                    Mobile Phone Number
+                    <input
+                        type="tel"
+                        name="phone"
+                        title="Enter your mobile phone number"
+                        autocomplete="tel"
+                        required
+                    >
+                </label>
+
+
+                <label>
+                    Business / Organization Name
+                    <input
+                        type="text"
+                        name="organization"
+                        title="Enter your business or organization name"
+                        autocomplete="organization"
+                        required
+                    >
+                </label>
+
+
+                <fieldset>
+
+                    <legend>
+                        Membership Level
+                    </legend>
+
+                    <label class="radio-option">
+                        <input
+                            type="radio"
+                            name="membership"
+                            value="np"
+                            required
+                        >
+                        NP Membership
+                    </label>
+
+                    <label class="radio-option">
+                        <input
+                            type="radio"
+                            name="membership"
+                            value="bronze"
+                        >
+                        Bronze Membership
+                    </label>
+
+                    <label class="radio-option">
+                        <input
+                            type="radio"
+                            name="membership"
+                            value="silver"
+                        >
+                        Silver Membership
+                    </label>
+
+                    <label class="radio-option">
+                        <input
+                            type="radio"
+                            name="membership"
+                            value="gold"
+                        >
+                        Gold Membership
+                    </label>
+
+                </fieldset>
+
+
+                <label>
+                    Business / Organization Description
+                    <textarea
+                        name="description"
+                        title="Describe your business or organization"
+                        rows="6"
+                    ></textarea>
+                </label>
+
+
+                <input
+                    type="hidden"
+                    name="timestamp"
+                    id="timestamp"
+                >
+
+
+                <input
+                    type="submit"
+                    value="Submit Application"
+                    class="submit-button"
+                >
+
+            </form>
+
+        </section>
+
+
+        <!-- MEMBERSHIP CARDS -->
+        <aside class="membership-levels">
+
+            <h2>
+                Membership Levels
+            </h2>
+
+
+            <article class="membership-card">
+
+                <span class="membership-icon">01</span>
+
+                <h3>
+                    NP Membership
+                </h3>
+
+                <p>
+                    For nonprofit organizations.
+                </p>
+
+                <button
+                    type="button"
+                    class="modal-button"
+                    data-modal="np-modal"
+                >
+                    More Information
+                </button>
+
+            </article>
+
+
+            <article class="membership-card">
+
+                <span class="membership-icon">02</span>
+
+                <h3>
+                    Bronze Membership
+                </h3>
+
+                <p>
+                    Essential benefits for growing businesses.
+                </p>
+
+                <button
+                    type="button"
+                    class="modal-button"
+                    data-modal="bronze-modal"
+                >
+                    More Information
+                </button>
+
+            </article>
+
+
+            <article class="membership-card">
+
+                <span class="membership-icon">03</span>
+
+                <h3>
+                    Silver Membership
+                </h3>
+
+                <p>
+                    Expanded visibility and business benefits.
+                </p>
+
+                <button
+                    type="button"
+                    class="modal-button"
+                    data-modal="silver-modal"
+                >
+                    More Information
+                </button>
+
+            </article>
+
+
+            <article class="membership-card">
+
+                <span class="membership-icon">04</span>
+
+                <h3>
+                    Gold Membership
+                </h3>
+
+                <p>
+                    Premium opportunities and promotion.
+                </p>
+
+                <button
+                    type="button"
+                    class="modal-button"
+                    data-modal="gold-modal"
+                >
+                    More Information
+                </button>
+
+            </article>
+
+        </aside>
+
+    </div>
+
+
+    <!-- MODALS -->
+
+    <dialog id="np-modal">
+
+        <div class="modal-content">
+
+            <h2>
+                NP Membership
+            </h2>
+
+            <p>
+                NP Membership is designed for nonprofit organizations
+                and has no membership fee.
+            </p>
+
+            <ul>
+                <li>Business directory listing</li>
+                <li>Community networking opportunities</li>
+                <li>Access to selected chamber events</li>
+            </ul>
+
+            <button class="close-modal">
+                Close
+            </button>
+
+        </div>
+
+    </dialog>
+
+
+    <dialog id="bronze-modal">
+
+        <div class="modal-content">
+
+            <h2>
+                Bronze Membership
+            </h2>
+
+            <p>
+                Bronze Membership provides essential resources for
+                businesses beginning to build their local network.
+            </p>
+
+            <ul>
+                <li>Business directory listing</li>
+                <li>Networking opportunities</li>
+                <li>Access to selected training sessions</li>
+                <li>Member event discounts</li>
+            </ul>
+
+            <button class="close-modal">
+                Close
+            </button>
+
+        </div>
+
+    </dialog>
+
+
+    <dialog id="silver-modal">
+
+        <div class="modal-content">
+
+            <h2>
+                Silver Membership
+            </h2>
+
+            <p>
+                Silver Membership provides increased visibility and
+                access to additional business resources.
+            </p>
+
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>Additional training opportunities</li>
+                <li>Increased event discounts</li>
+                <li>Business promotion opportunities</li>
+            </ul>
+
+            <button class="close-modal">
+                Close
+            </button>
+
+        </div>
+
+    </dialog>
+
+
+    <dialog id="gold-modal">
+
+        <div class="modal-content">
+
+            <h2>
+                Gold Membership
+            </h2>
+
+            <p>
+                Gold Membership provides premium networking,
+                promotional, and educational opportunities.
+            </p>
+
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Premium networking opportunities</li>
+                <li>Priority promotional opportunities</li>
+                <li>Home page business spotlight eligibility</li>
+                <li>Additional event and training benefits</li>
+            </ul>
+
+            <button class="close-modal">
+                Close
+            </button>
+
+        </div>
+
+    </dialog>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-contact">
+
+            <h2>
+                Paramaribo Business Hub
+            </h2>
+
+            <p>
+                Paramaribo, Suriname
+            </p>
+
+            <p>
+                info@paramaribobusinesshub.com
+            </p>
+
+            <p>
+                +597 400-000
+            </p>
+
+        </div>
+
+
+        <div class="social-links">
+
+            <a href="#" aria-label="YouTube">▶</a>
+            <a href="#" aria-label="X">𝕏</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+
+        </div>
+
+
+        <div class="footer-development">
+
+            <p>
+                WDD 231 Class Project
+            </p>
+
+            <p>
+                Dija Ramsoedit
+            </p>
+
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Paramaribo Business Hub
+            </p>
+
+            <p id="lastModified"></p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

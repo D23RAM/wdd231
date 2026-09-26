@@ -1051,3 +1051,356 @@ body.dark-mode .weather-section {
     background-color: #12372d;
 }
 
+/* =========================
+   JOIN PAGE
+========================= */
+
+.join-intro {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem 1.5rem;
+}
+
+.join-intro h1 {
+    margin: 0.4rem 0 0.8rem;
+    color: var(--green);
+    font-size: 2rem;
+}
+
+.join-intro > p:last-child {
+    max-width: 650px;
+    margin: 0;
+    line-height: 1.7;
+}
+
+
+/* FORM + MEMBERSHIP LAYOUT */
+
+.join-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.join-form-section,
+.membership-levels {
+    margin-bottom: 2rem;
+}
+
+.join-form-section h2,
+.membership-levels h2 {
+    margin-bottom: 1.25rem;
+    color: var(--green);
+}
+
+
+/* FORM */
+
+.membership-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.membership-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-weight: 600;
+}
+
+.membership-form input[type="text"],
+.membership-form input[type="email"],
+.membership-form input[type="tel"],
+.membership-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.8rem;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    background-color: #fff;
+    font: inherit;
+}
+
+.membership-form textarea {
+    resize: vertical;
+}
+
+.membership-form input:focus,
+.membership-form textarea:focus {
+    outline: 3px solid rgba(212, 167, 44, 0.35);
+    border-color: var(--green);
+}
+
+.membership-form small {
+    font-weight: 400;
+    color: #666;
+}
+
+
+/* MEMBERSHIP RADIO BUTTONS */
+
+.membership-form fieldset {
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.membership-form legend {
+    padding: 0 0.5rem;
+    font-weight: 700;
+    color: var(--green);
+}
+
+.membership-form .radio-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0.7rem 0;
+    font-weight: 400;
+}
+
+.membership-form .radio-option input {
+    width: auto;
+}
+
+
+.submit-button {
+    padding: 0.9rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--green);
+    color: var(--cream);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    background-color: var(--dark-green);
+}
+
+
+/* MEMBERSHIP CARDS */
+
+.membership-levels {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.membership-card {
+    padding: 1.4rem;
+    border-radius: 10px;
+    background-color: white;
+    border-left: 5px solid var(--gold);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+    /* Initial-load animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: membership-card-in 0.7s ease forwards;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.45s;
+}
+
+.membership-card:nth-child(5) {
+    animation-delay: 0.6s;
+}
+
+@keyframes membership-card-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-icon {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: var(--terracotta);
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.membership-card h3 {
+    margin: 0 0 0.4rem;
+    color: var(--green);
+}
+
+.membership-card p {
+    margin: 0 0 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.modal-button {
+    padding: 0;
+    border: none;
+    background: none;
+    color: var(--green);
+    font: inherit;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* MODALS */
+
+dialog {
+    width: min(90%, 500px);
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.modal-content {
+    padding: 2rem;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: var(--green);
+}
+
+.modal-content li {
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+}
+
+.close-modal {
+    margin-top: 1rem;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--green);
+    color: var(--cream);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* DARK MODE */
+
+body.dark-mode .join-intro h1,
+body.dark-mode .join-form-section h2,
+body.dark-mode .membership-levels h2,
+body.dark-mode .membership-card h3,
+body.dark-mode .membership-form legend,
+body.dark-mode .modal-content h2 {
+    color: var(--gold);
+}
+
+body.dark-mode .membership-form,
+body.dark-mode .membership-card {
+    background-color: #18352d;
+    color: var(--cream);
+}
+
+body.dark-mode .membership-form input[type="text"],
+body.dark-mode .membership-form input[type="email"],
+body.dark-mode .membership-form input[type="tel"],
+body.dark-mode .membership-form textarea {
+    background-color: #102b23;
+    color: var(--cream);
+    border-color: #55756a;
+}
+
+body.dark-mode .membership-form small {
+    color: #ddd;
+}
+
+body.dark-mode .membership-form fieldset {
+    border-color: #55756a;
+}
+
+body.dark-mode .modal-content {
+    background-color: #18352d;
+    color: var(--cream);
+}
+
+/* =========================
+   THANK YOU PAGE
+========================= */
+
+.thank-you-section {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 4rem 1rem 5rem;
+    text-align: center;
+}
+
+.thank-you-section h1 {
+    margin: 0.5rem 0 1rem;
+    color: var(--green);
+    font-size: 2.5rem;
+}
+
+.thank-you-message {
+    max-width: 650px;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+}
+
+.application-summary {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.application-summary h2 {
+    margin-top: 0;
+    color: var(--green);
+}
+
+.submitted-information p {
+    padding: 0.8rem 0;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+    line-height: 1.5;
+}
+
+.submitted-information p:last-child {
+    border-bottom: none;
+}
+
+body.dark-mode .thank-you-section h1,
+body.dark-mode .application-summary h2 {
+    color: var(--gold);
+}
+
+body.dark-mode .application-summary {
+    background-color: #18352d;
+    color: var(--cream);
+}
+
+body.dark-mode .submitted-information p {
+    border-color: #55756a;
+}
