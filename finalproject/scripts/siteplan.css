@@ -1,0 +1,458 @@
+:root {
+    --saffron: #E8751A;
+    --maroon: #6B1E2B;
+    --gold: #C89B3C;
+    --ivory: #FFF9EE;
+    --brown: #2D2118;
+    --white: #FFFFFF;
+    --light-gold: #E9D7A5;
+    --light-maroon: #F3E4E3;
+}
+
+
+/* ------------------------------
+   RESET
+------------------------------ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--ivory);
+    color: var(--brown);
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
+}
+
+
+/* ------------------------------
+   HEADER
+------------------------------ */
+
+header {
+    background-color: var(--maroon);
+    color: var(--white);
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-bottom: 5px solid var(--gold);
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.om-symbol {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3.5rem;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+header p {
+    margin: 0.2rem 0 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+
+/* ------------------------------
+   MAIN
+------------------------------ */
+
+main {
+    max-width: 1000px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+
+
+/* ------------------------------
+   SECTIONS
+------------------------------ */
+
+section {
+    background-color: var(--white);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border: 1px solid var(--light-gold);
+    border-top: 5px solid var(--saffron);
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(45, 33, 24, 0.08);
+}
+
+section h2 {
+    color: var(--maroon);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--light-gold);
+}
+
+section h3 {
+    color: var(--saffron);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+}
+
+section p {
+    font-size: 1rem;
+}
+
+section li {
+    margin-bottom: 0.8rem;
+}
+
+strong {
+    color: var(--maroon);
+}
+
+
+/* ------------------------------
+   COLOR SCHEME
+------------------------------ */
+
+.colors {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.color-card {
+    text-align: center;
+    background-color: var(--ivory);
+    border: 1px solid var(--light-gold);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.color {
+    height: 100px;
+}
+
+.color-card h3 {
+    margin: 0.8rem 0 0.1rem;
+}
+
+.color-card p {
+    margin: 0;
+    font-weight: 700;
+}
+
+.color-card span {
+    display: block;
+    padding: 0.5rem 0.7rem 1rem;
+    font-size: 0.85rem;
+}
+
+
+/* Actual colors */
+
+.saffron {
+    background-color: #E8751A;
+}
+
+.maroon {
+    background-color: #6B1E2B;
+}
+
+.gold {
+    background-color: #C89B3C;
+}
+
+.ivory {
+    background-color: #FFF9EE;
+    border-bottom: 1px solid var(--light-gold);
+}
+
+
+/* ------------------------------
+   TYPOGRAPHY
+------------------------------ */
+
+.font-card {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background-color: var(--ivory);
+    border-left: 4px solid var(--gold);
+    border-radius: 3px;
+}
+
+.font-card h3 {
+    margin-top: 0;
+}
+
+.cormorant {
+    font-family: "Cormorant Garamond", serif;
+}
+
+.cormorant h3 {
+    font-size: 2rem;
+}
+
+.lato {
+    font-family: "Lato", sans-serif;
+}
+
+
+/* ------------------------------
+   WIREFRAME
+------------------------------ */
+
+.wireframe {
+    background-color: var(--white);
+    border: 3px solid #000000;
+    padding: 10px;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ------------------------------
+   MOBILE WIREFRAME
+------------------------------ */
+
+.mobile-wireframe {
+    width: 320px;
+    margin: 2rem auto;
+}
+
+.wf-header {
+    border: 2px solid #000000;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.wf-om {
+    font-family: serif;
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.wf-nav {
+    border: 2px solid #000000;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.wf-hero {
+    border: 2px solid #000000;
+    padding: 25px 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.wf-hero strong {
+    display: block;
+    color: #000000;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.wf-hero small {
+    display: block;
+}
+
+.wf-button {
+    display: inline-block;
+    border: 2px solid #000000;
+    padding: 6px 15px;
+    margin-top: 12px;
+}
+
+.wf-title {
+    border: 2px solid #000000;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.wf-card {
+    border: 2px solid #000000;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.wf-card strong {
+    display: block;
+    color: #000000;
+    margin: 8px 0 3px;
+}
+
+.wf-card small {
+    display: block;
+}
+
+.wf-image {
+    height: 100px;
+    border: 2px dashed #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wf-footer {
+    border: 2px solid #000000;
+    padding: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* ------------------------------
+   DESKTOP WIREFRAME
+------------------------------ */
+
+.desktop-wireframe {
+    max-width: 850px;
+    margin: 2rem auto;
+}
+
+.desktop-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.desktop-logo {
+    display: flex;
+    align-items: center;
+}
+
+.desktop-nav {
+    font-size: 0.9rem;
+}
+
+.desktop-hero {
+    padding: 40px;
+}
+
+.desktop-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.desktop-cards .wf-card {
+    margin-bottom: 0;
+}
+
+.desktop-cards .wf-image {
+    height: 120px;
+}
+
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+    background-color: var(--maroon);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 5px solid var(--gold);
+}
+
+.footer-om {
+    font-family: "Cormorant Garamond", serif;
+    color: var(--gold);
+    font-size: 2rem;
+    line-height: 1;
+}
+
+footer p {
+    margin: 0.5rem 0 0;
+}
+
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+
+@media screen and (max-width: 700px) {
+
+    header {
+        padding: 2rem 1rem;
+    }
+
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    main {
+        padding: 0 1rem;
+        margin: 1.5rem auto;
+    }
+
+    section {
+        padding: 1.25rem;
+    }
+
+    section h2 {
+        font-size: 1.7rem;
+    }
+
+    .colors {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .desktop-header {
+        display: block;
+    }
+
+    .desktop-nav {
+        margin-top: 10px;
+        border-top: 1px solid #000000;
+        padding-top: 10px;
+    }
+
+    .desktop-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .desktop-wireframe {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .colors {
+        grid-template-columns: 1fr;
+    }
+
+    .mobile-wireframe {
+        width: 100%;
+    }
+
+    .desktop-cards {
+        grid-template-columns: 1fr;
+    }
+}
