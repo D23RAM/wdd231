@@ -24,7 +24,7 @@ const places = [
         name: "Neveh Shalom Synagogue",
         address: "Keizerstraat 82, Paramaribo, Suriname",
         image: "synagoge.jpg",
-        description: "A historic synagogue in central Paramaribo that represents an important part of the city's multicultural heritage."
+        description: "A historic synagogue in the heart of Paramaribo that represents an important part of the city's multicultural heritage."
     },
 
     {
