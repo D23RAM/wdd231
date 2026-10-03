@@ -1404,3 +1404,183 @@ body.dark-mode .application-summary {
 body.dark-mode .submitted-information p {
     border-color: #55756a;
 }
+
+
+
+/* =========================
+   DISCOVER PAGE
+========================= */
+
+.discover-intro {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem 1.5rem;
+}
+
+.discover-intro h1 {
+    margin: 0.4rem 0 0.8rem;
+    color: var(--green);
+    font-size: 2rem;
+}
+
+.discover-intro > p:last-child {
+    max-width: 700px;
+    margin: 0;
+    line-height: 1.7;
+}
+
+
+/* VISITOR MESSAGE */
+
+.visitor-message {
+    max-width: 1200px;
+    margin: 0 auto 1.5rem;
+    padding: 0 1rem;
+}
+
+.visitor-message p {
+    margin: 0;
+    padding: 1rem 1.25rem;
+    border-left: 5px solid var(--gold);
+    border-radius: 6px;
+    background-color: var(--cream);
+    color: var(--charcoal);
+    font-weight: 600;
+}
+
+
+/* DISCOVER GRID */
+
+.discover-gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.discover-grid {
+    display: grid;
+    gap: 1.25rem;
+
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+
+/* CARDS */
+
+.discover-card {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.discover-card:nth-child(1) {
+    grid-area: card1;
+}
+
+.discover-card:nth-child(2) {
+    grid-area: card2;
+}
+
+.discover-card:nth-child(3) {
+    grid-area: card3;
+}
+
+.discover-card:nth-child(4) {
+    grid-area: card4;
+}
+
+.discover-card:nth-child(5) {
+    grid-area: card5;
+}
+
+.discover-card:nth-child(6) {
+    grid-area: card6;
+}
+
+.discover-card:nth-child(7) {
+    grid-area: card7;
+}
+
+.discover-card:nth-child(8) {
+    grid-area: card8;
+}
+
+
+.discover-card h2 {
+    margin: 0 0 0.8rem;
+    color: var(--green);
+    font-size: 1.25rem;
+}
+
+
+.discover-card figure {
+    margin: 0 0 1rem;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+
+.discover-card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.discover-card address {
+    margin-bottom: 0.8rem;
+    color: var(--terracotta);
+    font-size: 0.85rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+.discover-card p {
+    margin: 0 0 1rem;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+
+.discover-card button {
+    padding: 0.65rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--green);
+    color: var(--cream);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* DARK MODE */
+
+body.dark-mode .discover-intro h1 {
+    color: var(--gold);
+}
+
+body.dark-mode .visitor-message p {
+    background-color: #18352d;
+    color: var(--cream);
+}
+
+body.dark-mode .discover-card {
+    background-color: #18352d;
+    color: var(--cream);
+}
+
+body.dark-mode .discover-card h2 {
+    color: var(--gold);
+}
