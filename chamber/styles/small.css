@@ -1377,29 +1377,13 @@ footer {
 
 
 body.dark-mode {
-
        --cream: #161C19;
-
-
-
        --charcoal: #F4F4F4;
-
-
-
+       --text: #F4F4F4;
        --white: #202824;
-
-
-
        --light-green: #29483D;
-
-
-
        --border: #52645C;
-
-
-
        --card-background: #202824;
-
 }
 
 
@@ -1493,6 +1477,8 @@ body.dark-mode .member-card {
 
 
 .hero-content {
+
+       color: #FFFFFF;
 
        position: absolute;
 
@@ -1676,7 +1662,7 @@ body.dark-mode .member-card {
 
        border-radius: 10px;
 
-       background-color: white;
+       background-color: #FFFFFF;
 
        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 
@@ -1866,7 +1852,7 @@ body.dark-mode .member-card {
 
        border-radius: 8px;
 
-       background-color: white;
+       background-color: #FFFFFF;
 
        text-align: center;
 
@@ -1938,7 +1924,7 @@ body.dark-mode .member-card {
 
        border-radius: 10px;
 
-       background-color: white;
+       background-color: #FFFFFF;
 
        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 
@@ -2202,7 +2188,7 @@ body.dark-mode .weather-section {
 
        border-radius: 12px;
 
-       background-color: white;
+       background-color: #FFFFFF;
 
        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 
@@ -2242,7 +2228,7 @@ body.dark-mode .weather-section {
 
        border-radius: 6px;
 
-       background-color: #fff;
+       background-color: #FFFFFF;
 
        font: inherit;
 
@@ -2396,7 +2382,7 @@ body.dark-mode .weather-section {
 
        border-radius: 10px;
 
-       background-color: white;
+       background-color: #FFFFFF;
 
        border-left: 5px solid var(--gold);
 
@@ -2738,7 +2724,7 @@ body.dark-mode .modal-content {
 
        border-radius: 12px;
 
-       background-color: white;
+       background-color: #FFFFFF;
 
        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 
@@ -2954,7 +2940,7 @@ body.dark-mode .submitted-information p {
 
        border-radius: 10px;
 
-       background-color: white;
+       background-color: #FFFFFF;
 
        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 
@@ -3166,34 +3152,12 @@ body.dark-mode .discover-card h2 {
 
 }
 
-/* =========================================
-   ACCESSIBILITY CONTRAST FIXES
-========================================= */
-
-body {
-    color: var(--charcoal);
-    background-color: var(--cream);
-}
-
+/* ACCESSIBILITY CONTRAST FIXES */
 .section-label,
 .membership-icon,
 .member-info a,
 .error {
     color: var(--terracotta);
-}
-
-.hero-content {
-    color: #FFFFFF;
-}
-
-body.dark-mode {
-    --cream: #161C19;
-    --charcoal: #F4F4F4;
-    --text: #F4F4F4;
-    --white: #202824;
-    --light-green: #29483D;
-    --border: #52645C;
-    --card-background: #202824;
 }
 
 body.dark-mode .section-label,
@@ -3204,10 +3168,6 @@ body.dark-mode .event-details,
 body.dark-mode .discover-card address,
 body.dark-mode .spotlight-info a {
     color: var(--light-gold);
-}
-
-body.dark-mode .hero-content {
-    color: #FFFFFF;
 }
 
 .hero-button,
