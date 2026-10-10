@@ -1,4 +1,7 @@
-
+// main.js — shared behavior for every page (ES module)
+// Handles the responsive hamburger navigation and the footer's copyright year.
+// Imported on every page; deities.js and form.js both import initNav() from here
+// so the mobile menu works consistently across the site.
 
 export function initNav() {
   const toggle = document.querySelector(".nav-toggle");
@@ -11,7 +14,7 @@ export function initNav() {
     toggle.setAttribute("aria-expanded", String(isOpen));
   });
 
- 
+  // Close the mobile menu once a link is chosen.
   nav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       nav.classList.remove("open");
@@ -19,7 +22,8 @@ export function initNav() {
     });
   });
 
-  
+  // If the window is resized past the desktop breakpoint while the mobile
+  // menu is open, reset it back to the horizontal layout.
   const desktopQuery = window.matchMedia("(min-width: 62rem)");
   desktopQuery.addEventListener("change", (e) => {
     if (e.matches) {

@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About — Hindu Deities Explorer</title>
-  <meta name="description" content="Learn about the purpose of the Hindu Deities Explorer project and share your feedback or favorite deity." />
-  <meta name="author" content="Dija Ramsoedit" />
+  <meta name="description" content="Learn about the purpose of the Hindu Deities Explorer project and share your feedback or favorite deity.">
+  <meta name="author" content="Dija Ramsoedit">
 
-  <meta property="og:title" content="About — Hindu Deities Explorer" />
-  <meta property="og:description" content="About this project, and a form to share your favorite deity or feedback." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/logo.svg" />
-  <meta property="og:url" content="https://d23ram.github.io/wdd231/final/about.html" />
+  <meta property="og:title" content="About — Hindu Deities Explorer">
+  <meta property="og:description" content="About this project, and a form to share your favorite deity or feedback.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.worldhistory.org/uploads/images/4238.jpg">
+  <meta property="og:url" content="https://d23ram.github.io/wdd231/final/about.html">
 
-  <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="scripts/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 40rem)">
+  <script type="module" src="scripts/form.js"></script>
 </head>
 <body>
   <a class="visually-hidden" href="#main-content">Skip to main content</a>
@@ -25,7 +27,7 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html">
-        <img src="images/logo.svg" alt="" width="34" height="34" />
+        <img src="images/logo.svg" alt="Hindu Deities Explorer logo" width="34" height="34">
         Hindu Deities Explorer
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
@@ -48,7 +50,7 @@
         <h1>About this project</h1>
         <p>Hindu Deities Explorer is a WDD 231 term project built to introduce visitors to major figures in Hindu tradition in a clear, respectful, and educational way. It is a personal learning project, not an official or exhaustive religious resource, and interpretations of these figures vary across regions, communities, and lineages.</p>
 
-        <div class="about-grid" style="margin-top:2rem;">
+        <div class="about-grid">
           <ul class="pillar-list">
             <li><strong>Respectful presentation</strong>Each profile is written in plain, descriptive language and avoids treating these traditions as folklore or myth in a dismissive sense.</li>
             <li><strong>Accuracy over simplicity</strong>Where traditions differ in their interpretation of a deity, the text avoids making a single claim sound absolute.</li>
@@ -56,17 +58,17 @@
           </ul>
 
           <form class="form-card" action="form-action.html" method="get" novalidate>
-            <h2 style="font-size:1.4rem; margin-bottom:0.3rem;">Share your favorite deity</h2>
-            <p style="font-size:0.92rem; color:var(--stone); margin-bottom:1.2rem;">Have feedback on the site, or want to tell us which deity resonates with you most? Send a note below.</p>
+            <h2>Share your favorite deity</h2>
+            <p class="form-intro">Have feedback on the site, or want to tell us which deity resonates with you most? Send a note below.</p>
 
             <div class="form-row">
               <label for="name">Full name</label>
-              <input type="text" id="name" name="name" required minlength="2" autocomplete="name" />
+              <input type="text" id="name" name="name" required minlength="2" autocomplete="name">
             </div>
 
             <div class="form-row">
               <label for="email">Email address</label>
-              <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com" />
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com">
             </div>
 
             <div class="form-row">
@@ -98,9 +100,9 @@
             </div>
 
             <div class="form-row">
-              <div class="checkbox-row" style="display:flex; align-items:center; gap:0.5rem;">
-                <input type="checkbox" id="updates" name="updates" value="Yes" style="width:auto;" />
-                <label for="updates" style="font-weight:400;">Email me when new deity profiles are added</label>
+              <div class="checkbox-row">
+                <input type="checkbox" id="updates" name="updates" value="Yes">
+                <label for="updates">Email me when new deity profiles are added</label>
               </div>
             </div>
 
@@ -111,11 +113,11 @@
     </section>
   </main>
 
-   <footer class="site-footer">
+  <footer class="site-footer">
     <div class="wrap">
       <div>
         <h4>Hindu Deities Explorer</h4>
-        <p style="max-width:28ch; font-size:0.9rem;">WDD 231 final project.</p>
+        <p class="footer-blurb">A WDD 231 student project by Dija Ramsoedit, built with plain HTML, CSS, and JavaScript.</p>
       </div>
       <div>
         <h4>Site</h4>
@@ -129,14 +131,12 @@
       <div>
         <h4>Project video</h4>
         <ul>
-          
-          <li><a href="https://canva.link/k01y9qw2lmv6wxw" data-video-link>Watch the JS demo video (click here)</a></li>
+          <li><a href="https://canva.link/k01y9qw2lmv6wxw">Watch the JS demo video (click here)</a></li>
         </ul>
       </div>
     </div>
     <p class="footer-bottom">&copy; <span id="year">2026</span> Dija Ramsoedit. Built for WDD 231.</p>
   </footer>
 
-  <script type="module" src="js/form.js"></script>
 </body>
 </html>

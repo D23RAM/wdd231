@@ -1,3 +1,6 @@
+// deities.js — Explore Hindu Deities page (ES module)
+// Fetches deity data, renders cards dynamically, and wires up search,
+// category filtering, an accessible details modal, and localStorage favorites.
 
 import { initNav, setFooterYear } from "./main.js";
 
@@ -20,7 +23,9 @@ const modalCloseBtn = document.querySelector("#modal-close");
 let allDeities = [];
 let lastFocusedElement = null;
 
-
+/* ---------------------------------------------------------
+   localStorage helpers — persists the visitor's favorite deities
+--------------------------------------------------------- */
 function getFavorites() {
   try {
     const raw = localStorage.getItem(FAVORITES_KEY);
@@ -51,7 +56,9 @@ function toggleFavorite(id) {
   return favorites;
 }
 
-
+/* ---------------------------------------------------------
+   Fetching
+--------------------------------------------------------- */
 async function loadDeities() {
   statusLine.textContent = "Loading deities…";
   try {
@@ -66,7 +73,7 @@ async function loadDeities() {
   } catch (err) {
     console.error("Failed to load deity data:", err);
     statusLine.textContent =
-      "Sorry.  the deity list couldn't be loaded. Please refresh the page to try again.";
+      "Sorry — the deity list couldn't be loaded. Please refresh the page to try again.";
     grid.innerHTML = "";
   }
 }
@@ -82,11 +89,13 @@ function populateCategoryOptions(deities) {
 }
 
 function categoryClass(category) {
-  
+  // first word of the category maps to one of the CSS color classes
   return "category-" + category.split(" ")[0].replace(/[()]/g, "");
 }
 
-
+/* ---------------------------------------------------------
+   Rendering
+--------------------------------------------------------- */
 function deityCardTemplate(deity, favorites) {
   const isFav = favorites.includes(deity.id);
   const qualitiesText = deity.qualities.slice(0, 3).join(", ");
@@ -99,8 +108,7 @@ function deityCardTemplate(deity, favorites) {
           alt="${deity.imageAlt}"
           loading="lazy"
           width="400"
-          height="500"
-        />
+          height="500">
       </div>
       <div class="body">
         <h3>${deity.name}</h3>
@@ -138,7 +146,9 @@ function renderDeities(deities) {
   statusLine.textContent = `Showing ${deities.length} of ${allDeities.length} deities.`;
 }
 
-
+/* ---------------------------------------------------------
+   Filtering — combines search text, category, and favorites-only
+--------------------------------------------------------- */
 function applyFilters() {
   const query = searchInput.value.trim().toLowerCase();
   const category = categoryFilter.value;
@@ -155,12 +165,14 @@ function applyFilters() {
   renderDeities(filtered);
 }
 
-
+/* ---------------------------------------------------------
+   Modal
+--------------------------------------------------------- */
 function openModal(deity) {
   lastFocusedElement = document.activeElement;
 
   modalBody.innerHTML = `
-    <img class="modal-photo" src="${deity.image}" alt="${deity.imageAlt}" width="760" height="288" />
+    <img class="modal-photo" src="${deity.image}" alt="${deity.imageAlt}" width="760" height="288">
     <h2 id="modal-title">${deity.name}</h2>
     <span class="category-tag ${categoryClass(deity.category)}">${deity.category}</span>
 
@@ -205,7 +217,7 @@ function handleModalKeydown(e) {
     closeModal();
     return;
   }
-
+  // Simple focus trap: keep Tab cycling within the modal while it's open.
   if (e.key === "Tab") {
     const focusable = modalOverlay.querySelectorAll(
       "button, [href], input, select, textarea, [tabindex]:not([tabindex='-1'])"
@@ -223,7 +235,9 @@ function handleModalKeydown(e) {
   }
 }
 
-
+/* ---------------------------------------------------------
+   Event wiring
+--------------------------------------------------------- */
 grid.addEventListener("click", (e) => {
   const favBtn = e.target.closest(".fav-btn");
   const detailsBtn = e.target.closest(".details-btn");

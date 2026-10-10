@@ -1,0 +1,37 @@
+/* =========================================================
+   large.css — enhancements for wider screens
+   (loaded after small.css)
+========================================================= */
+
+@media (min-width: 62rem) {
+  .header-inner { padding: 0.85rem 1.5rem; flex-wrap: nowrap; }
+  .nav-toggle { display: none; }
+  .main-nav { width: auto; }
+  .main-nav ul { display: flex; flex-direction: row; border-top: none; gap: 0.25rem; }
+  .main-nav a { border-bottom: none; padding: 0.5rem 0.9rem; }
+  .main-nav a[aria-current="page"]::before { content: ""; }
+  .main-nav a[aria-current="page"] { border-bottom: 2px solid var(--gold); }
+}
+
+@media (min-width: 45rem) {
+  .feature-grid { grid-template-columns: repeat(3, 1fr); }
+
+  .site-footer .wrap { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 40rem) {
+  .featured-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .deity-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 64rem) {
+  .featured-grid { grid-template-columns: repeat(3, 1fr); }
+
+  .deity-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 55rem) {
+  .about-grid { grid-template-columns: 1.1fr 0.9fr; }
+}
+

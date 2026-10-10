@@ -1,10 +1,14 @@
+// form.js — handles the "Share Your Favorite Deity" form on about.html
+// and the results display on form-action.html (ES module).
 
 import { initNav, setFooterYear } from "./main.js";
 
 initNav();
 setFooterYear();
 
-
+/* ---------------------------------------------------------
+   About page: live character counter for the message field
+--------------------------------------------------------- */
 const message = document.querySelector("#message");
 const counter = document.querySelector("#message-counter");
 const MAX_LEN = 500;
@@ -18,7 +22,9 @@ if (message && counter) {
   updateCounter();
 }
 
-
+/* ---------------------------------------------------------
+   form-action page: read the submitted query string and display it
+--------------------------------------------------------- */
 const output = document.querySelector("#submission-output");
 
 if (output) {

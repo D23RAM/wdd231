@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Explore Hindu Deities — Hindu Deities Explorer</title>
-  <meta name="description" content="Search and filter 15 Hindu deities by category, save favorites, and open detailed profiles with stories, symbols, and mantras." />
-  <meta name="author" content="Dija Ramsoedit" />
+  <meta name="description" content="Search and filter 15 Hindu deities by category, save favorites, and open detailed profiles with stories, symbols, and mantras.">
+  <meta name="author" content="Dija Ramsoedit">
 
-  <meta property="og:title" content="Explore Hindu Deities — Hindu Deities Explorer" />
-  <meta property="og:description" content="Search and filter 15 Hindu deities, save favorites, and explore detailed profiles." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/logo.svg" />
-  <meta property="og:url" content="https://d23ram.github.io/wdd231/final/deities.html" />
+  <meta property="og:title" content="Explore Hindu Deities — Hindu Deities Explorer">
+  <meta property="og:description" content="Search and filter 15 Hindu deities, save favorites, and explore detailed profiles.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.worldhistory.org/uploads/images/4023.jpg">
+  <meta property="og:url" content="https://d23ram.github.io/wdd231/final/deities.html">
 
-  <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="scripts/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 40rem)">
+  <script type="module" src="scripts/deities.js"></script>
 </head>
 <body>
   <a class="visually-hidden" href="#main-content">Skip to main content</a>
@@ -25,7 +27,7 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html">
-        <img src="images/logo.svg" alt="" width="34" height="34" />
+        <img src="images/logo.svg" alt="Hindu Deities Explorer logo" width="34" height="34">
         Hindu Deities Explorer
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
@@ -51,7 +53,7 @@
         <div class="toolbar">
           <div class="field">
             <label for="deity-search">Search by name</label>
-            <input type="search" id="deity-search" placeholder="e.g. Ganesha…" />
+            <input type="search" id="deity-search" placeholder="e.g. Ganesha…">
           </div>
           <div class="field">
             <label for="category-filter">Category</label>
@@ -60,7 +62,7 @@
             </select>
           </div>
           <div class="field fav-toggle">
-            <input type="checkbox" id="fav-only" />
+            <input type="checkbox" id="fav-only">
             <label for="fav-only">Favorites only</label>
           </div>
         </div>
@@ -72,7 +74,7 @@
     </section>
   </main>
 
-  
+  <!-- Accessible modal dialog for deity details -->
   <div class="modal-overlay" id="deity-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
     <div class="modal">
       <button type="button" class="modal-close" id="modal-close" aria-label="Close details">&times;</button>
@@ -80,11 +82,11 @@
     </div>
   </div>
 
-   <footer class="site-footer">
+  <footer class="site-footer">
     <div class="wrap">
       <div>
         <h4>Hindu Deities Explorer</h4>
-        <p style="max-width:28ch; font-size:0.9rem;">WDD 231 final project.</p>
+        <p class="footer-blurb">A WDD 231 student project by Dija Ramsoedit, built with plain HTML, CSS, and JavaScript.</p>
       </div>
       <div>
         <h4>Site</h4>
@@ -98,14 +100,12 @@
       <div>
         <h4>Project video</h4>
         <ul>
-          
-          <li><a href="https://canva.link/k01y9qw2lmv6wxw" data-video-link>Watch the JS demo video (click here)</a></li>
+          <li><a href="https://canva.link/k01y9qw2lmv6wxw">Watch the JS demo video (click here)</a></li>
         </ul>
       </div>
     </div>
     <p class="footer-bottom">&copy; <span id="year">2026</span> Dija Ramsoedit. Built for WDD 231.</p>
   </footer>
 
-  <script type="module" src="js/deities.js"></script>
 </body>
 </html>
