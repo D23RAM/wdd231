@@ -28,6 +28,13 @@
     --text: #242424;
     --charcoal: #242424;
     --border: #D8CDBB;
+
+    /* Supporting colors used by dark-mode components */
+    --dark-surface: #18352D;
+    --dark-surface-strong: #12372D;
+    --dark-input: #102B23;
+    --dark-border: #55756A;
+    --muted-text: var(--muted-text)DDD;
 }
 
 
@@ -1390,7 +1397,7 @@ body.dark-mode {
 
 body.dark-mode .member-header {
 
-       color: #FFFFFF;
+       color: var(--white);
 
 }
 
@@ -1398,7 +1405,7 @@ body.dark-mode .member-header {
 
 body.dark-mode .member-tagline {
 
-       color: #FFFFFF;
+       color: var(--white);
 
 }
 
@@ -1477,8 +1484,6 @@ body.dark-mode .member-card {
 
 
 .hero-content {
-
-       color: #FFFFFF;
 
        position: absolute;
 
@@ -1662,7 +1667,7 @@ body.dark-mode .member-card {
 
        border-radius: 10px;
 
-       background-color: #FFFFFF;
+       background-color: var(--white);
 
        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 
@@ -1852,7 +1857,7 @@ body.dark-mode .member-card {
 
        border-radius: 8px;
 
-       background-color: #FFFFFF;
+       background-color: var(--white);
 
        text-align: center;
 
@@ -1924,7 +1929,7 @@ body.dark-mode .member-card {
 
        border-radius: 10px;
 
-       background-color: #FFFFFF;
+       background-color: var(--white);
 
        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 
@@ -2062,7 +2067,7 @@ body.dark-mode .forecast-card,
 
 body.dark-mode .spotlight-card {
 
-       background-color: #18352d;
+       background-color: var(--dark-surface);
 
        color: var(--cream);
 
@@ -2072,7 +2077,7 @@ body.dark-mode .spotlight-card {
 
 body.dark-mode .spotlight-header p {
 
-       color: #ddd;
+       color: var(--muted-text);
 
 }
 
@@ -2080,7 +2085,7 @@ body.dark-mode .spotlight-header p {
 
 body.dark-mode .weather-section {
 
-       background-color: #12372d;
+       background-color: var(--dark-surface-strong);
 
 }
 
@@ -2188,7 +2193,7 @@ body.dark-mode .weather-section {
 
        border-radius: 12px;
 
-       background-color: #FFFFFF;
+       background-color: var(--white);
 
        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 
@@ -2228,7 +2233,7 @@ body.dark-mode .weather-section {
 
        border-radius: 6px;
 
-       background-color: #FFFFFF;
+       background-color: var(--white);
 
        font: inherit;
 
@@ -2382,7 +2387,7 @@ body.dark-mode .weather-section {
 
        border-radius: 10px;
 
-       background-color: #FFFFFF;
+       background-color: var(--white);
 
        border-left: 5px solid var(--gold);
 
@@ -2618,7 +2623,7 @@ body.dark-mode .membership-form,
 
 body.dark-mode .membership-card {
 
-       background-color: #18352d;
+       background-color: var(--dark-surface);
 
        color: var(--cream);
 
@@ -2634,11 +2639,11 @@ body.dark-mode .membership-form input[type="tel"],
 
 body.dark-mode .membership-form textarea {
 
-       background-color: #102b23;
+       background-color: var(--dark-input);
 
        color: var(--cream);
 
-       border-color: #55756a;
+       border-color: var(--dark-border);
 
 }
 
@@ -2646,7 +2651,7 @@ body.dark-mode .membership-form textarea {
 
 body.dark-mode .membership-form small {
 
-       color: #ddd;
+       color: var(--muted-text);
 
 }
 
@@ -2654,7 +2659,7 @@ body.dark-mode .membership-form small {
 
 body.dark-mode .membership-form fieldset {
 
-       border-color: #55756a;
+       border-color: var(--dark-border);
 
 }
 
@@ -2662,7 +2667,7 @@ body.dark-mode .membership-form fieldset {
 
 body.dark-mode .modal-content {
 
-       background-color: #18352d;
+       background-color: var(--dark-surface);
 
        color: var(--cream);
 
@@ -2724,7 +2729,7 @@ body.dark-mode .modal-content {
 
        border-radius: 12px;
 
-       background-color: #FFFFFF;
+       background-color: var(--white);
 
        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 
@@ -2750,7 +2755,7 @@ body.dark-mode .modal-content {
 
        margin: 0;
 
-       border-bottom: 1px solid #ddd;
+       border-bottom: 1px solid var(--muted-text);
 
        line-height: 1.5;
 
@@ -2778,7 +2783,7 @@ body.dark-mode .application-summary h2 {
 
 body.dark-mode .application-summary {
 
-       background-color: #18352d;
+       background-color: var(--dark-surface);
 
        color: var(--cream);
 
@@ -2788,7 +2793,7 @@ body.dark-mode .application-summary {
 
 body.dark-mode .submitted-information p {
 
-       border-color: #55756a;
+       border-color: var(--dark-border);
 
 }
 
@@ -2940,7 +2945,7 @@ body.dark-mode .submitted-information p {
 
        border-radius: 10px;
 
-       background-color: #FFFFFF;
+       background-color: var(--white);
 
        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 
@@ -3128,7 +3133,7 @@ body.dark-mode .discover-intro h1 {
 
 body.dark-mode .visitor-message p {
 
-       background-color: #18352d;
+       background-color: var(--dark-surface);
 
        color: var(--cream);
 
@@ -3138,7 +3143,7 @@ body.dark-mode .visitor-message p {
 
 body.dark-mode .discover-card {
 
-       background-color: #18352d;
+       background-color: var(--dark-surface);
 
        color: var(--cream);
 
@@ -3172,12 +3177,12 @@ body.dark-mode .spotlight-info a {
 
 .hero-button,
 .membership-badge {
-    color: #242424;
+    color: var(--text);
 }
 
 .hero-button:hover,
 .hero-button:focus {
-    color: #242424;
+    color: var(--text);
 }
 
 .member-info a,

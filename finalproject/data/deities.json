@@ -1,0 +1,340 @@
+[
+  {
+    "id": "ganesha",
+    "name": "Ganesha",
+    "category": "Divine Family",
+    "qualities": [
+      "wisdom",
+      "new beginnings",
+      "remover of obstacles"
+    ],
+    "symbols": [
+      "modaka (sweet)",
+      "lotus",
+      "elephant head",
+      "mouse"
+    ],
+    "festivals": [
+      "Ganesh Chaturthi"
+    ],
+    "story": "Ganesha is honored at the start of new endeavors and is traditionally invoked before important undertakings, journeys, and ceremonies. In most accounts he is the son of Shiva and Parvati. His elephant head is widely understood as a symbol of wisdom and discernment, and devotees regard him as a remover of obstacles on the path toward a goal.",
+    "mantra": "Om Gam Ganapataye Namaha",
+    "image": "https://www.worldhistory.org/uploads/images/1195.jpg",
+    "imageAlt": "Statue of Ganesha with an elephant head and four arms"
+  },
+  {
+    "id": "shiva",
+    "name": "Shiva",
+    "category": "Trimurti",
+    "qualities": [
+      "transformation",
+      "meditation",
+      "detachment"
+    ],
+    "symbols": [
+      "trishul (trident)",
+      "crescent moon",
+      "serpent",
+      "damaru (drum)"
+    ],
+    "festivals": [
+      "Maha Shivaratri"
+    ],
+    "story": "Shiva is one of the principal forms through which the divine is understood in many Hindu traditions, associated with transformation, meditation, and the dissolving of what no longer serves growth. He is often depicted in deep meditation on Mount Kailash, and as Nataraja performing the cosmic dance that balances creation and change.",
+    "mantra": "Om Namah Shivaya",
+    "image": "https://www.worldhistory.org/uploads/images/5450.jpg",
+    "imageAlt": "Stone figure of Shiva from Khajuraho, India, 11th century"
+  },
+  {
+    "id": "parvati",
+    "name": "Parvati",
+    "category": "Devi (Goddess)",
+    "qualities": [
+      "devotion",
+      "strength",
+      "nurturing love"
+    ],
+    "symbols": [
+      "lotus",
+      "trishul",
+      "lion"
+    ],
+    "festivals": [
+      "Teej",
+      "Gauri Puja"
+    ],
+    "story": "Parvati is honored as a goddess of devotion, strength, and nurturing love, and is traditionally regarded as the consort of Shiva and mother of Ganesha and Kartikeya. Her story of steady, patient devotion is often cited as an example of determination, and she also appears in forms such as Durga and Kali when fierce protection is called for.",
+    "mantra": "Om Parvatyai Namaha",
+    "image": "https://www.worldhistory.org/uploads/images/4255.jpg",
+    "imageAlt": "South Indian sculpture of Parvati, 11th to 12th century"
+  },
+  {
+    "id": "vishnu",
+    "name": "Vishnu",
+    "category": "Trimurti",
+    "qualities": [
+      "preservation",
+      "protection",
+      "balance"
+    ],
+    "symbols": [
+      "conch shell (shankha)",
+      "discus (chakra)",
+      "lotus",
+      "mace (gada)"
+    ],
+    "festivals": [
+      "Vaikuntha Ekadashi"
+    ],
+    "story": "Vishnu is understood in many traditions as the preserver who maintains balance (dharma) in the universe. He is said to take on avatars, or earthly forms, in times of great need — Krishna and Rama among the most widely known — in order to restore harmony. He is often depicted resting on the serpent Shesha, with Lakshmi by his side.",
+    "mantra": "Om Namo Narayanaya",
+    "image": "https://www.worldhistory.org/uploads/images/6144.jpg",
+    "imageAlt": "Blue schist statue of Vishnu, 11th to 12th century"
+  },
+  {
+    "id": "lakshmi",
+    "name": "Lakshmi",
+    "category": "Devi (Goddess)",
+    "qualities": [
+      "prosperity",
+      "abundance",
+      "good fortune"
+    ],
+    "symbols": [
+      "lotus",
+      "gold coins",
+      "owl"
+    ],
+    "festivals": [
+      "Diwali"
+    ],
+    "story": "Lakshmi is honored as a goddess of prosperity, abundance, and well-being, understood by many devotees in both material and spiritual senses. She is especially celebrated during Diwali, when homes are cleaned and lit with lamps to welcome her presence. She is traditionally regarded as the consort of Vishnu.",
+    "mantra": "Om Shreem Mahalakshmyai Namaha",
+    "image": "https://www.worldhistory.org/uploads/images/4007.jpg",
+    "imageAlt": "Figure of Lakshmi standing on a pink lotus flower"
+  },
+  {
+    "id": "saraswati",
+    "name": "Saraswati",
+    "category": "Devi (Goddess)",
+    "qualities": [
+      "knowledge",
+      "music",
+      "the arts"
+    ],
+    "symbols": [
+      "veena (stringed instrument)",
+      "swan",
+      "white lotus",
+      "book"
+    ],
+    "festivals": [
+      "Vasant Panchami"
+    ],
+    "story": "Saraswati is honored as a goddess of knowledge, music, and the arts, often invoked by students and artists at the start of study or creative work. She is traditionally depicted seated on a white lotus or swan, playing the veena, symbolizing the harmony between knowledge and creative expression.",
+    "mantra": "Om Aim Saraswatyai Namaha",
+    "image": "https://www.worldhistory.org/uploads/images/4238.jpg",
+    "imageAlt": "Granite statue of Saraswati from the Brihadeshwara temple"
+  },
+  {
+    "id": "krishna",
+    "name": "Krishna",
+    "category": "Avatar of Vishnu",
+    "qualities": [
+      "compassion",
+      "playfulness",
+      "guidance"
+    ],
+    "symbols": [
+      "flute (bansuri)",
+      "peacock feather",
+      "lotus",
+      "cow"
+    ],
+    "festivals": [
+      "Janmashtami",
+      "Holi"
+    ],
+    "story": "Krishna is regarded in many traditions as an avatar of Vishnu, known for his childhood stories in Vrindavan as well as his teachings as an adult, most famously the guidance he gives in the Bhagavad Gita. He is often depicted playing the flute, and devotees relate to him through both his playful nature and his role as a spiritual guide.",
+    "mantra": "Om Namo Bhagavate Vasudevaya",
+    "image": "https://www.worldhistory.org/uploads/images/4023.jpg",
+    "imageAlt": "Bronze figure of Krishna, 14th to 17th century"
+  },
+  {
+    "id": "rama",
+    "name": "Rama",
+    "category": "Avatar of Vishnu",
+    "qualities": [
+      "righteousness",
+      "duty",
+      "steadfastness"
+    ],
+    "symbols": [
+      "bow and arrow",
+      "lotus"
+    ],
+    "festivals": [
+      "Diwali",
+      "Ram Navami"
+    ],
+    "story": "Rama is honored as an avatar of Vishnu and the central figure of the Ramayana, an epic that follows his commitment to duty and righteous conduct (dharma) even through exile and hardship. His return to Ayodhya after defeating Ravana is commemorated by many as part of the celebration of Diwali.",
+    "mantra": "Om Shri Ramaya Namaha",
+    "image": "https://www.worldhistory.org/uploads/images/4058.jpg",
+    "imageAlt": "Sculpture of Rama with Hanuman from Srivaikundam, Tamil Nadu"
+  },
+  {
+    "id": "hanuman",
+    "name": "Hanuman",
+    "category": "Devoted Protector",
+    "qualities": [
+      "devotion",
+      "courage",
+      "selfless service"
+    ],
+    "symbols": [
+      "gada (mace)",
+      "mountain",
+      "mace"
+    ],
+    "festivals": [
+      "Hanuman Jayanti"
+    ],
+    "story": "Hanuman is celebrated for his unwavering devotion to Rama and for the courage and strength he showed in the Ramayana, including his journey to Lanka in search of Sita. He is widely regarded as an example of selfless service and loyalty, and many devotees recite hymns in his honor for strength and protection.",
+    "mantra": "Om Hanumate Namaha",
+    "image": "https://www.worldhistory.org/uploads/images/5412.jpg",
+    "imageAlt": "Monumental statue of Hanuman at a temple in Maharashtra"
+  },
+  {
+    "id": "durga",
+    "name": "Durga",
+    "category": "Devi (Goddess)",
+    "qualities": [
+      "protection",
+      "courage",
+      "triumph over adversity"
+    ],
+    "symbols": [
+      "trishul",
+      "lion or tiger",
+      "sword",
+      "lotus"
+    ],
+    "festivals": [
+      "Navratri",
+      "Durga Puja"
+    ],
+    "story": "Durga is a fierce and protective form of the goddess, called upon when courage is needed to face adversity. According to tradition she was created from the combined energies of several deities to defeat the buffalo demon Mahishasura, and she is celebrated widely during Navratri and Durga Puja as a symbol of the triumph of good over evil.",
+    "mantra": "Om Dum Durgayei Namaha",
+    "image": "https://www.worldhistory.org/uploads/images/4325.jpg",
+    "imageAlt": "Sculpture of Durga with her lion from the temple at Aihole"
+  },
+  {
+    "id": "kali",
+    "name": "Kali",
+    "category": "Devi (Goddess)",
+    "qualities": [
+      "transformation",
+      "fearlessness",
+      "liberation from ego"
+    ],
+    "symbols": [
+      "sword",
+      "severed head (symbolic)",
+      "garland"
+    ],
+    "festivals": [
+      "Kali Puja"
+    ],
+    "story": "Kali is a powerful and often misunderstood form of the goddess, associated with the destruction of ego, illusion, and fear rather than destruction in a literal or negative sense. Her fierce imagery is understood within Hindu tradition as representing the clearing away of what obstructs spiritual liberation. Interpretations of Kali vary across regions and lineages, and she is approached with deep reverence rather than fear by her devotees.",
+    "mantra": "Om Krim Kalikayai Namaha",
+    "image": "https://www.worldhistory.org/uploads/images/5164.jpg",
+    "imageAlt": "Statue of Kali at the Dakshineswar Kali Temple, West Bengal"
+  },
+  {
+    "id": "kartikeya",
+    "name": "Kartikeya",
+    "category": "Divine Family",
+    "qualities": [
+      "courage",
+      "discipline",
+      "victory"
+    ],
+    "symbols": [
+      "vel (spear)",
+      "peacock",
+      "rooster"
+    ],
+    "festivals": [
+      "Thaipusam",
+      "Skanda Sashti"
+    ],
+    "story": "Kartikeya, also known as Murugan, Skanda, or Subramanya in different regions, is honored as the son of Shiva and Parvati and is associated with courage, discipline, and victory over negative forces. He is especially revered in South Indian and Tamil traditions, where Thaipusam is celebrated as one of his major festivals.",
+    "mantra": "Om Saravana Bhavaya Namaha",
+    "image": "https://iiif.wellcomecollection.org/image/V0046269EC/full/760,/0/default.jpg",
+    "imageAlt": "19th-century painting of Kartikeya standing in front of a peacock"
+  },
+  {
+    "id": "radha",
+    "name": "Radha",
+    "category": "Devi (Goddess)",
+    "qualities": [
+      "devotion",
+      "divine love",
+      "surrender"
+    ],
+    "symbols": [
+      "lotus",
+      "peacock feather"
+    ],
+    "festivals": [
+      "Radhashtami"
+    ],
+    "story": "Radha is honored as the beloved companion of Krishna and is seen by many devotees as the embodiment of pure, devoted love for the divine. Their relationship is often interpreted symbolically, representing the soul's longing for union with the divine, and Radha is held in especially high regard within devotional (bhakti) traditions centered on Krishna.",
+    "mantra": "Om Shri Radhayai Namaha",
+    "image": "https://www.worldhistory.org/uploads/images/4083.jpg",
+    "imageAlt": "18th-century painting of Radha with Krishna"
+  },
+  {
+    "id": "sita",
+    "name": "Sita",
+    "category": "Devi (Goddess)",
+    "qualities": [
+      "integrity",
+      "resilience",
+      "devotion"
+    ],
+    "symbols": [
+      "lotus"
+    ],
+    "festivals": [
+      "Sita Navami"
+    ],
+    "story": "Sita is honored for her integrity and resilience throughout the trials recounted in the Ramayana, including her exile and captivity. She is traditionally regarded as an incarnation of the goddess Lakshmi and the consort of Rama, and her steadfastness is frequently discussed as a central theme of the epic.",
+    "mantra": "Om Sitayai Namaha",
+    "image": "https://www.worldhistory.org/uploads/images/4059.jpg",
+    "imageAlt": "Illustration of Sita with Rama and Lakshmana"
+  },
+  {
+    "id": "brahma",
+    "name": "Brahma",
+    "category": "Trimurti",
+    "qualities": [
+      "creation",
+      "knowledge",
+      "creativity"
+    ],
+    "symbols": [
+      "four heads",
+      "swan",
+      "Vedas (sacred texts)",
+      "lotus"
+    ],
+    "festivals": [
+      "Kartik Purnima (regional observances)"
+    ],
+    "story": "Brahma is traditionally regarded as the creator within the Trimurti, the three principal divine functions alongside Vishnu (preservation) and Shiva (transformation). He is often depicted with four heads, representing the four Vedas, and is associated with knowledge and the creative force behind the universe. Compared to Vishnu and Shiva, Brahma is worshipped at relatively few dedicated temples today, though he remains an important figure in Hindu cosmology.",
+    "mantra": "Om Brahmaye Namaha",
+    "image": "https://www.worldhistory.org/uploads/images/3969.jpg",
+    "imageAlt": "Temple ceiling slab depicting Brahma, Aihole, 7th century"
+  }
+]

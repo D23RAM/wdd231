@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Hindu Deities Explorer logo">
+  <circle cx="32" cy="32" r="30" fill="#6b1e2b"/>
+  <circle cx="32" cy="32" r="22" fill="none" stroke="#c89b3c" stroke-width="1.5" opacity="0.8"/>
+  <path d="M32 14c3 6 3 8 0 12 -3-4-3-6 0-12Z" fill="#c89b3c"/>
+  <path d="M32 50c-3-6-3-8 0-12 3 4 3 6 0 12Z" fill="#c89b3c"/>
+  <path d="M14 32c6-3 8-3 12 0 -4 3-6 3-12 0Z" fill="#c89b3c"/>
+  <path d="M50 32c-6 3-8 3-12 0 4-3 6-3 12 0Z" fill="#c89b3c"/>
+  <circle cx="32" cy="32" r="7" fill="#e8751a"/>
+</svg>
